@@ -1,0 +1,19 @@
+:root {
+  --btn-bg: hsl(25, 97%, 53%);
+
+  --header-text: hsl(0, 100%, 100%);
+  --body-text: hsl(217, 12%, 63%);
+  --card-bg: hsl(213, 19%, 18%);
+  --body-bg: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
