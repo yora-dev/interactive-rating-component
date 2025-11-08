@@ -1,7 +1,14 @@
 import "./App.css";
+import RatingPage from "./components/RatingPage";
+import ThankyouPage from "./components/ThankyouPage";
 
 const App = () => {
-  return <div>Hello</div>;
+  return (
+    <>
+      <RatingPage />
+      <ThankyouPage />
+    </>
+  );
 };
 
 export default App;

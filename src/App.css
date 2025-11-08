@@ -3,7 +3,8 @@
 
   --header-text: hsl(0, 100%, 100%);
   --body-text: hsl(217, 12%, 63%);
-  --card-bg: hsl(213, 19%, 18%);
+  --card-bg: hsl(212, 22%, 15%);
+  --rating-bg: hsl(210, 9%, 23%);
   --body-bg: hsl(216, 12%, 8%);
 }
 
@@ -12,8 +13,103 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Overpass", sans-serif;
+  transition: all 0.35s;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg);
+}
+
+.rating-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.star-icon {
+  display: block;
+}
+
+.img-container {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--rating-bg);
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  color: var(--header-text);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  font-size: 1.5rem;
+  color: var(--body-text);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.rating-values {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--rating-bg);
+  color: var(--body-text);
+  border: none;
+  font-size: 1.6rem;
+  display: block;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn {
+  background-color: var(--btn-bg);
+  width: 100%;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--body-bg);
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.submit-btn:hover {
+  background-color: var(--header-text);
+  cursor: pointer;
+}
+
+.rating:hover {
+  background-color: var(--btn-bg);
+  color: var(--body-bg);
+  cursor: pointer;
 }
