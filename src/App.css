@@ -30,7 +30,8 @@ body {
   background-color: var(--body-bg);
 }
 
-.rating-card {
+.rating-card,
+.thank-you-card {
   background-color: var(--card-bg);
   padding: 2rem;
   border-radius: 2rem;
@@ -51,14 +52,16 @@ body {
   margin-bottom: 2rem;
 }
 
-.card-header {
+.card-header,
+.thankyou-header {
   color: var(--header-text);
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.card-body {
+.card-body,
+.thankyou-body {
   font-size: 1.5rem;
   color: var(--body-text);
   line-height: 1.2;
@@ -112,4 +115,18 @@ body {
   background-color: var(--btn-bg);
   color: var(--body-bg);
   cursor: pointer;
+}
+
+.thank-you-card {
+  align-items: center;
+  text-align: center;
+}
+
+.result-text {
+  color: var(--btn-bg);
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--rating-bg);
+  margin: 2rem 0 3rem;
 }

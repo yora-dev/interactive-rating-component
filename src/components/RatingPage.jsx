@@ -1,6 +1,11 @@
 import StarIcon from "../assets/icon-star.svg";
 
 const RatingPage = () => {
+  const handleClick = (event) => {
+    if (event.target.value) {
+      console.log(event.target.value);
+    }
+  };
   return (
     <div className="rating-card">
       <div className="img-container">
@@ -13,7 +18,7 @@ const RatingPage = () => {
       </p>
 
       <div className="rating-container">
-        <div className="rating-values">
+        <div className="rating-values" onClick={handleClick}>
           <button value={1} className="rating">
             1
           </button>
